@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Galeria</title>
+
+    <nav>
+      <a href="historia.html">História|</a>
+      <a href="games.html">Games|</a>
+      <a href="contatos.html">Contatos|</a>
+      <a href="redesSociais.html">Redes Sociais|</a>
+      <a href="recrutamento.html">Recrutamento</a>
+    </nav>
+    <br>
+  </head>
+
+  <body>
+
+    <h1>Galeria</h1>
+
+    <section class="galeria">
+      <img class="foto" src="img/machadoTeacher.jpg"/>
+      <img class="foto" src="img/ww2.jpg"/>
+      <img class="foto" src="img/bf1.jpg"/>
+      <img class="foto" src="img/bf5.jpg"/>
+      <img class="foto" src="img/primeiroLogo.jpg"/>
+      <br>
+    </section>
+
+    <h2>Comemoração 5 anos</h2>
+    <br>
+    <embed src="mp4/niver5anos.mp4" width="640" height="480">
+
+    <style>
+    body {
+      background-color: rgb(25, 25, 112);
+    }
+    h1 {
+      color: white;
+    }
+    h2 {
+      color: red;
+    }
+    h5 {
+      color: white;
+    }
+    a {
+      color: rgb(147,112,219)
+    }
+
+
+
+    *{
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    .galeria {
+      margin: 20px auto;
+      width: 640px;
+      height: 480px;
+      position: relative;
+      overflow: hidden;
+    }
+    .foto {
+      max-width:640px;
+      max-height:480px;
+      width: auto;
+      height: auto;
+      position: absolute;
+      opacity: 0;
+      animation-name: animacao;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      align-items: center;
+    }
+
+    @keyframes animacao {
+
+      25% {
+        opacity: 1;
+        transform: scale(1.1,1.1);
+        }
+
+      50% {
+        opacity: 0;
+        }
+    }
+
+    .foto:nth-child(1){
+
+    }
+    .foto:nth-child(2){
+      animation-delay: 5s;
+
+    }
+    .foto:nth-child(3){
+      animation-delay: 10s;
+
+    }
+    .foto:nth-child(4){
+      animation-delay: 15s;
+
+    }
+    .foto:nth-child(5){
+      animation-delay: 20s;
+
+    }
+    </style>
+
+    <footer>
+
+      <div class="MapaDoSite">
+        <br>
+        <h5>Mapa do site</h5>
+        <br>
+        <ul>
+          <li><a href="QRUsite.html">Home</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+          <li><a href="redesSociais.html">Redes Sociais</a></li>
+          <li><a href="recrutamento.html">Recrutamento</a></li>
+        </ul>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
